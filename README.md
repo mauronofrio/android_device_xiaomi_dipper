@@ -22,10 +22,12 @@ repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.
 repo sync
 ```
 
-Then add these projects to .repo/manifest.xml:
+Create local manifest and add these projects to .repo/local_manifest/dipper.xml:
 
 ```xml
+<manifest>
 <project path="device/xiaomi/dipper" name="mauronofrio/android_device_xiaomi_dipper" remote="github" revision="android-9.0" />
+</manifest>
 ```
 
 Finally execute these:
